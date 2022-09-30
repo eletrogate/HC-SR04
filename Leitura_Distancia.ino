@@ -20,7 +20,7 @@ void loop(){
   // Envia pulso para o disparar o sensor
   DisparaPulsoUltrassonico();
   // Mede o tempo de duração do sinal no pino de leitura(us)
-  TempEcho = pulseIn(PinEcho, HIGH);
+  TempoEcho = pulseIn(PinEcho, HIGH);
   Serial.println("Distancia em metros: ");
   Serial.println(CalculaDistancia(TempoEcho));
   Serial.println("Distancia em centimetros: ");
